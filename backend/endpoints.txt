@@ -1,0 +1,82 @@
+# Get All Users
+GET http://localhost:5000/api/users
+
+# Create a New User
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "role": "traveler"
+}
+
+# Update a User (Replace :id with actual user ID)
+PUT http://localhost:5000/api/users/:id
+Content-Type: application/json
+
+{
+    "name": "John Updated",
+    "email": "johnupdated@example.com"
+}
+
+# Delete a User (Replace :id with actual user ID)
+DELETE http://localhost:5000/api/users/:id
+
+
+
+------ADMIN------------
+# Get All Admins
+GET http://localhost:5000/api/admins
+
+# Create a New Admin
+POST http://localhost:5000/api/admins
+Content-Type: application/json
+
+{
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "role": "super_admin"
+}
+
+# Update an Admin (Replace :id with actual admin ID)
+PUT http://localhost:5000/api/admins/:id
+Content-Type: application/json
+
+{
+    "name": "Updated Admin",
+    "role": "admin"
+}
+
+# Delete an Admin (Replace :id with actual admin ID)
+DELETE http://localhost:5000/api/admins/:id
+
+
+
+----TRIP-------:
+# Get All Trips
+GET http://localhost:5000/api/trips
+
+# Create a New Trip
+POST http://localhost:5000/api/trips
+Content-Type: application/json
+
+{
+    "title": "Summer Vacation",
+    "destination": "Maldives",
+    "startDate": "2024-07-15",
+    "endDate": "2024-07-25",
+    "status": "Planned"
+}
+
+# Update a Trip (Replace :id with actual trip ID)
+PUT http://localhost:5000/api/trips/:id
+Content-Type: application/json
+
+{
+    "title": "Updated Summer Trip",
+    "destination": "Bali"
+}
+
+# Delete a Trip (Replace :id with actual trip ID)
+DELETE http://localhost:5000/api/trips/:id
